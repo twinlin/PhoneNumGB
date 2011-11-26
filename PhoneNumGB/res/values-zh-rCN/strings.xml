@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">号码吉凶 </string>
+     <string name="pho_num">请输入你的手机号码，家用电话​​号码，车牌号码(最少4位数字)</string>
+    <string name="num_btn">试算</string>
+    <string name="num_result">你的号码为</string>
+    <string name="num_gb">吉凶数字为</string>
+  <string name="home_uri">http://twinlin.blogspot.com</string>
+  <string name="error_title">输入格式错误</string>
+  <string name="error_msg">请重新输入号码(最少4位数字)</string>
+  <string name="input_msg">请输入号码</string>
+  <string name="about_title">号码吉凶v1.0</string>
+  <string name="about_msg">版权属于Twin Lin工作室</string>
+  <string name="home_label">官网</string>
+  <string name="ok_label">确认</string>
+   
+</resources>
