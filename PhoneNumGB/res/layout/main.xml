@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout 
+   <LinearLayout 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:myapp="schemas.android.com/apk/res/com.twinslin.pnum"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:weightSum="1">
-    <LinearLayout
+	android:background="@drawable/background">
+
+       
+          
+  <LinearLayout
      android:id="@+id/AdLayout"
      android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
- ></LinearLayout>
+     android:layout_height="wrap_content" 
+  ></LinearLayout>
 
 
 <TextView android:layout_height="wrap_content" 
@@ -18,9 +21,11 @@
           android:textAppearance="?android:attr/textAppearanceMedium" 
           android:layout_width="fill_parent"
           android:textSize="15dip"
-          android:textColor="#FF00FF00"
+          android:textColor="#3366FF"
           />
-
+
+
+
 <EditText
     android:id="@+id/pnumber"
     android:layout_width="match_parent"
@@ -42,15 +47,20 @@
           android:textAppearance="?android:attr/textAppearanceMedium" 
           android:layout_width="fill_parent"
          />
-<TextView android:layout_height="wrap_content" 
-          android:id="@+id/suggest" 
-          android:text="" 
-          android:textAppearance="?android:attr/textAppearanceMedium" 
-          android:layout_width="fill_parent" 
-          android:textSize="25dip"
-          android:textStyle="bold"
-          android:textColor="#FFFF0000"
-          android:layout_weight="0.42"/>
 
-</LinearLayout>
+<TextView
+    android:id="@+id/suggest"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.12"
+    android:text=""
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:textColor="#FFFF0000"
+    android:textSize="25dip"
+    android:textStyle="bold" />
+            
+        
+
+
+ </LinearLayout>  
 

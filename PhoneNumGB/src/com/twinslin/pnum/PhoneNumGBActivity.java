@@ -25,10 +25,21 @@ public class PhoneNumGBActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_LEFT_ICON);//?¨æ?é¡Œæ?é¡¯ç¤º?–æ?(icon)step 1
-        setContentView(R.layout.main);
-        getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,R.drawable.icon);//?¨æ?é¡Œæ?é¡¯ç¤º?–æ?(icon)step 2
-        
+        requestWindowFeature(Window.FEATURE_LEFT_ICON);
+      setContentView(R.layout.top);
+     
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+    
+        setContentView(R.layout.main);  
+ 
+        getWindow().setFeatureDrawableResource(Window.FEATURE_LEFT_ICON,R.drawable.icon);
+  
+
         // Create the adView
         LinearLayout layout =(LinearLayout)findViewById(R.id.AdLayout);
         AdView adView =new AdView(this, AdSize.BANNER, "a14ec6018893474");
@@ -97,8 +108,8 @@ public class PhoneNumGBActivity extends Activity {
     	public void onClick(View v) {
     		DecimalFormat nf = new DecimalFormat("0");
     try{ 
-    		//?–å??¸å?å­—ä¸²
-    	    String getNum = field_num.getText().toString();
+    		//get input string
+    	String getNum = field_num.getText().toString();
     		int numLength = getNum.length();
     		
     		if(numLength<4){
@@ -111,14 +122,15 @@ public class PhoneNumGBActivity extends Activity {
     		}
     	
     		String cutNum = getNum.substring(numLength);
-    		OpNumGB pNum = new OpNumGB();  //è¨ˆç??©ä»¶
+    		double	opDouNum = Double.parseDouble(cutNum);
+    		int	opIntNum = Integer.parseInt(cutNum);
+    	    double opResulto = ((opDouNum/80-opIntNum/80)*80);
     	     	   
-    		
-			//Present result
-    		view_result.setText(getText(R.string.num_result)+getNum+getText(R.string.num_gb)+nf.format(pNum.getVolumn(cutNum)));
+    		//Present result
+    		view_result.setText(getText(R.string.num_result)+getNum+getText(R.string.num_gb)+nf.format(opResulto));
     		
     		//Give number good & bad advance
-    		String restostr = String.valueOf(pNum.getVolumn(cutNum));
+    		String restostr = String.valueOf(opResulto);
      	    BigDecimal opResult = new BigDecimal(restostr);
      	    opResult = opResult.setScale(4,BigDecimal.ROUND_HALF_UP);
      	    
@@ -217,8 +229,8 @@ public class PhoneNumGBActivity extends Activity {
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		menu.add(0, MENU_ABOUT, 0, "?œæ–¼...").setIcon(android.R.drawable.ic_menu_help);
-		menu.add(0, NENU_QUIT, 0, "?¢é?").setIcon(android.R.drawable.ic_menu_close_clear_cancel);
+		menu.add(0, MENU_ABOUT, 0, R.string.about_lable).setIcon(android.R.drawable.ic_menu_help);
+		menu.add(0, NENU_QUIT, 0, R.string.quit_lable).setIcon(android.R.drawable.ic_menu_close_clear_cancel);
 		return super.onCreateOptionsMenu(menu);
 	}
 	@Override

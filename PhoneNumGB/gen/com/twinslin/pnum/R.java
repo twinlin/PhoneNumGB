@@ -54,10 +54,13 @@ containing a value of this type.
         public static final int secondaryTextColor=0x7f010002;
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
+        public static final int background=0x7f020000;
+        public static final int icon=0x7f020001;
+        public static final int top=0x7f020002;
     }
     public static final class id {
         public static final int AdLayout=0x7f050000;
+        public static final int linearLayout1=0x7f050005;
         public static final int pnumber=0x7f050001;
         public static final int result=0x7f050003;
         public static final int submit=0x7f050002;
@@ -65,8 +68,10 @@ containing a value of this type.
     }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int top=0x7f030001;
     }
     public static final class string {
+        public static final int about_lable=0x7f04005e;
         public static final int about_msg=0x7f04005b;
         public static final int about_title=0x7f04005a;
         public static final int advance_aa=0x7f040000;
@@ -161,6 +166,7 @@ containing a value of this type.
         public static final int num_result=0x7f040054;
         public static final int ok_label=0x7f04005d;
         public static final int pho_num=0x7f040052;
+        public static final int quit_lable=0x7f04005f;
     }
     public static final class styleable {
         /** Attributes that can be used with a com_admob_android_ads_AdView.

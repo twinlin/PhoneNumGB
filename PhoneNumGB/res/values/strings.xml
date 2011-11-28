@@ -13,5 +13,7 @@
   	<string name="about_msg">版權屬於Twin Lin工作室</string>
   	<string name="home_label">官網</string>
   	<string name="ok_label">確認</string>
+  	<string name="about_lable">關於</string>
+  	<string name="quit_lable">離開</string>
    
 </resources>
