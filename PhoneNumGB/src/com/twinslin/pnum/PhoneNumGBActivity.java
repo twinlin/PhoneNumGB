@@ -22,9 +22,10 @@ public class PhoneNumGBActivity extends Activity {
 		TimerTask task = new TimerTask() {
 			@Override
 			public void run() {
-				startActivity(it); // 執行
+				startActivity(it);// 執行
+				finish();//結束PhoneNumGBActivity
 			}
 		};
-		timer.schedule(task, 300); // .3秒後
+		timer.schedule(task, 300);// .3秒後
 	}
 }
