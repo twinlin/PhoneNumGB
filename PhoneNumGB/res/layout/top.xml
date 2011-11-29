@@ -1,10 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="schemas.android.com/apk/res/com.twinslin.pnum"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/top" >
 
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:myapp="schemas.android.com/apk/res/com.twinslin.pnum"
-        android:id="@+id/linearLayout1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" 
-        android:background="@drawable/top" >
-
-    </LinearLayout>
+</LinearLayout>

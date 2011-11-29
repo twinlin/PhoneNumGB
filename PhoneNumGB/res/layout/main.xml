@@ -1,66 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-   <LinearLayout 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:myapp="schemas.android.com/apk/res/com.twinslin.pnum"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-	android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:orientation="vertical" >
 
-       
-          
-  <LinearLayout
-     android:id="@+id/AdLayout"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content" 
-  ></LinearLayout>
+    <LinearLayout
+        android:id="@+id/AdLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </LinearLayout>
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pho_num"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#3366FF"
+        android:textSize="15dip" />
 
-<TextView android:layout_height="wrap_content" 
-          android:text="@string/pho_num" 
-          android:textAppearance="?android:attr/textAppearanceMedium" 
-          android:layout_width="fill_parent"
-          android:textSize="15dip"
-          android:textColor="#3366FF"
-          />
+    <EditText
+        android:id="@+id/pnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_msg"
+        android:inputType="number|phone"
+        android:text=""
+        android:textSize="15dip" />
 
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:text="@string/num_btn" />
 
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
-<EditText
-    android:id="@+id/pnumber"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="@string/input_msg"
-    android:inputType="number|phone"
-    android:text=""
-    android:textSize="15dip" />
+    <TextView
+        android:id="@+id/suggest"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.12"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFF0000"
+        android:textSize="25dip"
+        android:textStyle="bold" />
 
-<Button
-    android:id="@+id/submit"
-    android:layout_width="91dp"
-    android:layout_height="wrap_content"
-    android:text="@string/num_btn"/>
-       
-<TextView android:layout_height="wrap_content" 
-          android:id="@+id/result" 
-          android:text="" 
-          android:textAppearance="?android:attr/textAppearanceMedium" 
-          android:layout_width="fill_parent"
-         />
-
-<TextView
-    android:id="@+id/suggest"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_weight="0.12"
-    android:text=""
-    android:textAppearance="?android:attr/textAppearanceMedium"
-    android:textColor="#FFFF0000"
-    android:textSize="25dip"
-    android:textStyle="bold" />
-            
-        
-
-
- </LinearLayout>  
-
+</LinearLayout>
