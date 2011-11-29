@@ -25,6 +25,6 @@ public class PhoneNumGBActivity extends Activity {
 				startActivity(it); // 執行
 			}
 		};
-		timer.schedule(task, 1000 * 1); // 1秒後
+		timer.schedule(task, 300); // .3秒後
 	}
 }
